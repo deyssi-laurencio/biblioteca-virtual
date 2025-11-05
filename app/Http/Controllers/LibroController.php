@@ -49,6 +49,7 @@ class LibroController extends Controller
      */
     public function create()
     {
+
         $areas = Area::orderBy('nombre')->get();
         $categorias = Categoria::orderBy('nombre_categoria')->get();
 

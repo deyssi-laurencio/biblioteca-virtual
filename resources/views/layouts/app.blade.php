@@ -17,6 +17,9 @@
             font-weight: bold;
         }
     </style>
+
+     <!-- Archivos compilados por Vite -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <!-- Barra superior -->

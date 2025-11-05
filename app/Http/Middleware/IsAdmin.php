@@ -10,8 +10,8 @@ class IsAdmin
 {
     public function handle(Request $request, Closure $next)
     {
-        // Debe estar logueado, ser admin y estar activo
-        if (!Auth::check() || Auth::user()->role !== 'admin' || Auth::user()->estado !== 'activo') {
+        // Verifica si está autenticado y es administrador activo
+        if (!Auth::check() || Auth::user()->rol !== 'admin' || Auth::user()->estado !== 'activo') {
             abort(403, 'No autorizado.');
         }
 
